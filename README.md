@@ -3,7 +3,7 @@
 A full-stack e-commerce cart application built using **React, Node.js, Express, and MongoDB**.  
 The project allows users to browse products, add them to a cart, update quantities, and view the final checkout amount with discount support.
 
-This project demonstrates **scalable frontend architecture using feature-based folders and Jotai state management**, along with a **RESTful backend API**.
+This project demonstrates **scalable  architecture using feature-based folders and Jotai state management**, along with a **RESTful backend API**.
 
 ---
 
@@ -23,6 +23,18 @@ This project demonstrates **scalable frontend architecture using feature-based f
 - Mongoose
 
 ---
+# Home Page
+<img width="3392" height="1916" alt="image" src="https://github.com/user-attachments/assets/9417d8e6-e5e4-4295-b7cc-c6b9fa7ffba2" />
+
+# Listed Products
+<img width="2466" height="1900" alt="image" src="https://github.com/user-attachments/assets/c725b1b5-8912-4ee7-8f99-c63bc43f64a5" />
+
+# Product Detail Page
+<img width="2542" height="1214" alt="image" src="https://github.com/user-attachments/assets/676693bb-8c0e-447d-8efc-c1d307d4cc84" />
+
+# Cart Page
+<img width="2228" height="1388" alt="image" src="https://github.com/user-attachments/assets/e361cf54-28e6-4ffc-8f47-7225daccf8d5" />
+
 
 # Project Structure
 
@@ -248,21 +260,3 @@ npm start
 
 ---
 
-# Learning Outcomes
-
-Through this project, the following concepts were implemented:
-
-- Full-stack MERN development
-- Feature-based React architecture
-- State management with Jotai
-- RESTful API design
-- MongoDB schema design
-- Cart and checkout logic
-
----
-
-# Author
-
-**Antim Chauhan**  
-Final Year Undergraduate  
-Indian Institute of Technology Jammu
