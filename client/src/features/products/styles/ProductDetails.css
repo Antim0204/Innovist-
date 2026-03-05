@@ -1,0 +1,275 @@
+.pgdet-container {
+  padding: 70px 40px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* MAIN WRAPPER */
+
+.pgdet-wrapper {
+  display: flex;
+  gap: 90px;
+  background: #ffffff;
+  padding: 60px;
+  border-radius: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+  animation: pgdet-fadeIn 0.4s ease-in-out;
+}
+
+/* IMAGE SECTION */
+
+.pgdet-image-section {
+  flex: 0.9;
+  position: relative;
+}
+
+.pgdet-image-box {
+  background: #fafafa;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.pgdet-image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.pgdet-image-box img:hover {
+  transform: scale(1.05);
+}
+
+/* BACK BUTTON */
+
+.pgdet-back-btn {
+  position: absolute;
+  top: -45px;
+  left: -45px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: 0.3s ease;
+  z-index: 10000;
+}
+
+.pgdet-back-btn i {
+  font-size: 14px;
+}
+
+.pgdet-back-btn:hover {
+  background: black;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* INFO SECTION */
+
+.pgdet-info-section {
+  flex: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.pgdet-info-section h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* RATING */
+
+.pgdet-rating {
+  color: #f5a623;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 16px;
+}
+
+.pgdet-rating span {
+  color: #666;
+  margin-left: 10px;
+}
+
+/* PRICE */
+
+.pgdet-price {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* DESCRIPTION */
+
+.pgdet-description {
+  color: #666;
+  line-height: 1.8;
+  font-size: 16px;
+  max-width: 500px;
+}
+
+/* QUANTITY */
+
+.pgdet-qty-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pgdet-qty-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pgdet-qty-btn:hover {
+  background: black;
+  color: white;
+}
+
+.pgdet-qty-value {
+  font-size: 18px;
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* ADD TO CART */
+
+.pgdet-add-btn {
+  padding: 16px;
+  width: 260px;
+  border-radius: 12px;
+  border: none;
+  background: black;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.pgdet-add-btn i {
+  margin-right: 8px;
+}
+
+.pgdet-add-btn:hover {
+  background: #222;
+  transform: translateY(-3px);
+}
+
+/* CHECKOUT */
+
+.pgdet-checkout-actions {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.pgdet-checkout-btn {
+  padding: 15px 22px;
+  border-radius: 12px;
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pgdet-checkout-btn:hover {
+  background: #ff4b4b;
+  transform: translateY(-3px);
+}
+
+.pgdet-continue-btn {
+  padding: 15px 22px;
+  border-radius: 12px;
+  border: 1px solid black;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pgdet-continue-btn:hover {
+  background: black;
+  color: white;
+}
+
+/* META */
+
+.pgdet-meta {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #555;
+}
+
+.pgdet-meta i {
+  margin-right: 8px;
+}
+
+/* LOADER */
+
+.pgdet-loader-container {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pgdet-loader {
+  width: 55px;
+  height: 55px;
+  border: 5px solid #ddd;
+  border-top: 5px solid black;
+  border-radius: 50%;
+  animation: pgdet-spin 1s linear infinite;
+}
+
+/* ANIMATIONS */
+
+@keyframes pgdet-spin {
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pgdet-fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .pgdet-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .pgdet-image-box img {
+    max-width: 320px;
+  }
+
+  .pgdet-info-section h1 {
+    font-size: 28px;
+  }
+}
